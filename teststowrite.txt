@@ -1,0 +1,11 @@
+test1:
+- add task item through ActiveRecord commands
+- go to task path
+- see that task
+
+test2:
+- go to task path
+- create task through form
+- go to task path
+- see that task
+
