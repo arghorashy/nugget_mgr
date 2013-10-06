@@ -43,3 +43,12 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :test, :development do
+	gem 'turn'
+	gem 'rspec-rails'
+	gem 'capybara'
+	gem 'guard-rspec'
+	#gem 'growl-notify'  # for mac
+	gem 'launchy'
+end
