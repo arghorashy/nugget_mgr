@@ -13,6 +13,12 @@
 			<td> <%= nugget.description %> </td>
 			<td> <%= nugget.tags %> </td>
 			<td> <%= nugget.markForReview %> </td>
+			<td> <%= link_to 'Edit', edit_nugget_path(nugget) %> </td>		
+			<td> <%= link_to 'Delete', nugget, :method => 'delete' %> </td>		
 		</tr>
 	<% end %>
 </table>
+
+<h2>Add New Nugget</h2>
+
+<%= render 'form' %>

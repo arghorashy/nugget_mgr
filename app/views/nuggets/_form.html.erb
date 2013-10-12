@@ -1,0 +1,29 @@
+<%= form_for @nugget do |f| %>
+	<table>
+		<tr>
+			<td>
+				<%= f.label :name %> 
+			</td>
+			<td>
+				<%= f.text_field :name %> 
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<%= f.label :description %>
+			</td>
+			<td>
+				<%= f.text_area :description %> 
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<%= f.label "Mark for review" %>
+			</td>
+			<td>
+				<%= f.check_box :markForReview %>
+			</td>
+		</tr>
+	</table>
+	<%= f.submit %>
+<% end %>
